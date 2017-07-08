@@ -1,0 +1,300 @@
+/*
+设置动画样式
+*/
+
+/* 第一屏动画样式-start */
+	.screen-1__heading,
+	.screen-1__phone,
+	.screen-1__shadow
+	{
+		transition: all 1s;
+	}
+	.screen-1__heading_animate_init,
+	.screen-1__shadow_animate_init
+	{
+		opacity: 0;
+		transform: translate(0,100%);
+	}
+	.screen-1__heading_animate_done,
+	.screen-1__shadow_animate_done,
+	.screen-1__phone_animate_done
+	{
+		opacity: 1;
+		transform: translate(0,0);
+	}
+
+	.screen-1__phone_animate_init
+	{
+		opacity: 0;
+		transform: translate(0,-100%);
+	}
+	.header{
+		transition: all .8s;
+	}
+	.header_status_black{
+		background-color: rgba(0, 0, 0, .5);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 3;
+	}
+	.header_status_black .header__logo,
+	.header_status_black .header__nav-item{
+		color: #fff;
+	}
+	.header_status_black .header__nav-item_status_active{
+		color: #f01400;
+	}
+/* 第一屏动画样式-end */
+
+/* 第二屏样式-start */	
+	.screen-2__heading,
+	.screen-2__subheading,
+	.screen-2__phone
+	{
+		transition: all 1s;
+	}
+
+	.screen-2__heading_animate_init
+	{
+		opacity: 0;
+		transform: translate(0,-100%);
+	}
+	.screen-2__subheading_animate_init,
+	.screen-2__phone_animate_init
+	{
+		opacity: 0;
+		transform: translate(0,50%);
+	}
+	.screen-2__heading_animate_done,
+	.screen-2__phone_animate_done
+	{
+		opacity: 1;
+		transform: translate(0,0);
+	}
+	.screen-2__subheading_animate_done
+	{
+		opacity: 1;
+		transform: translate(0,0);
+	}
+
+	.screen-2__point 
+	{
+		transition: all 1s .8s;
+	}
+
+	.screen-2__point_i_1_animate_init
+	{
+		opacity: 0;
+		transform: translate(-100%,0);
+	}
+	.screen-2__point_i_1_animate_done
+	{
+		opacity: 1;
+		transform: translate(0,0);
+	}
+	.screen-2__point_i_2_animate_init,
+	.screen-2__point_i_3_animate_init
+	{
+		opacity: 0;
+		transform: translate(100%,0);
+	}
+	.screen-2__point_i_2_animate_done,
+	.screen-2__point_i_3_animate_done
+	{
+		opacity: 1;
+		transform: translate(0,0);
+	}
+/* 第二屏样式-end */	
+
+/* 第三屏样式-start */
+	.screen-3__heading,
+	.screen-3__subheading,
+	.screen-3__phone,
+	.screen-3__features
+	{
+		transition: all 1s;
+	}
+	.screen-3__heading_animate_init
+	{
+		opacity: 0;
+		transform: translate(0,-100%);
+	}
+	.screen-3__subheading_animate_init,
+	.screen-3__phone_animate_init
+	{
+		opacity: 0;
+		transform: translate(0,100%);
+	}
+	.screen-3__features_animate_init
+	{
+		opacity: 0;
+		transform: scale(.5);
+	}
+	.screen-3__features_animate_done
+	{
+		opacity: 1;
+		transform: scale(1);
+	}
+	.screen-3__heading_animate_done,
+	.screen-3__subheading_animate_done,
+	.screen-3__subheading_animate_phone
+	{
+		opacity: 1;
+		transform: translate(0,0);
+	}
+
+	.screen-3__features__item
+	{
+		transition: all 0.6s;
+		cursor: pointer;
+	}
+	.screen-3__features__item:hover{
+		transform: scale(1.1);
+		border-color: #fff;
+	}
+/* 第三屏样式-end */
+
+/* 第四屏样式-start */
+	.screen-4__heading,
+	.screen-4__subheading
+	{
+		transition: all 1s;
+	}
+	.screen-4__heading_animate_init
+	{
+		opacity: 0;
+		transform: translate(0,-100%);
+	}
+	.screen-4__subheading_animate_init
+	{
+		opacity: 0;
+		transform: translate(0,100%);
+	}
+	.screen-4__heading_animate_done,
+	.screen-4__subheading_animate_done
+	{
+		opacity: 1;
+		transform: translate(0,0);
+	}
+	
+	 .screen-4__type__item__i__1_animate_init,
+	  .screen-4__type__item__i__1_animate_done
+	 {
+	 	transition: all 1s .5s;
+	 }
+	 .screen-4__type__item__i__2_animate_init,
+	  .screen-4__type__item__i__2_animate_done
+	 {
+	 	transition: all 1s 1s;
+	 }
+	 .screen-4__type__item__i__3_animate_init,
+	  .screen-4__type__item__i__3_animate_done
+	 {
+	 	transition: all 1s 1.5s;
+	 }
+	 .screen-4__type__item__i__4_animate_init,
+	  .screen-4__type__item__i__4_animate_done
+	 {
+	 	transition: all 1s 2s;
+	 }
+
+	 .screen-4__type__item__i__1_animate_init,
+	 .screen-4__type__item__i__2_animate_init,
+	 .screen-4__type__item__i__3_animate_init,
+	 .screen-4__type__item__i__4_animate_init
+	 {
+	 	opacity: 0;
+	 }
+
+	 .screen-4__type__item__i__1_animate_done,
+	 .screen-4__type__item__i__2_animate_done,
+	 .screen-4__type__item__i__3_animate_done,
+	 .screen-4__type__item__i__4_animate_done
+	 {
+	 	opacity: 1;
+	 }
+/* 第四屏样式-end */
+
+/* 第五屏样式-start */
+	.screen-5__heading,
+	.screen-5__subheading,
+	.screen-5__bg
+	{
+		transition: all 1s;
+	}
+	.screen-5__heading_animate_init
+	{
+		opacity: 0;
+		transform: translate(0,-100%);
+	}
+	.screen-5__heading_animate_done
+	{
+		opacity: 1;
+		transform: translate(0,0);
+	}
+	.screen-5__subheading_animate_init,
+	.screen-5__bg_animate_init
+	{
+		opacity: 0;
+		transform: translate(0,100%);
+	}
+	.screen-5__subheading_animate_done
+	{
+		opacity: 1;
+		transform: translate(0,0);
+	}
+/* 第五屏样式-end */
+
+/*帧动画*/
+	@-webkit-keyframes bounce {
+	0%,100% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+	}
+	}
+/*帧动画*/
+
+/* 第二屏伪元素闪烁动画-start */
+	.screen-2__point:before,
+	.screen-2__point:after{
+		content: ' ';
+		display: block;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 1px;
+		left: 0;
+		background-color: rgba(255, 0, 0, 0.4);
+		border-radius: 50%;
+		-webkit-animation: bounce 2s infinite;
+	}
+
+	.screen-2__point:before{
+		-webkit-animation: bounce 2s infinite 1s;
+	}
+
+	.screen-2__point_i_1:before,
+	.screen-2__point_i_1:after{
+		left: 200px;
+	}
+/* 第二屏伪元素闪烁动画-end */
+
+/* 大纲部分动画样式 */
+	.outline{
+		opacity: 0;
+		transition : all 1s;
+		transform: translate(100%,0);
+	}
+	.outline_status_in{
+		opacity: 1;
+		transform: translate(0,0);
+	}
+
+	.outline_status_active{
+		color: #f01400;
+	}
+/* 大纲部分动画样式 */
